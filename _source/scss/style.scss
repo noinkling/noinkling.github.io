@@ -31,7 +31,7 @@ header {
   position: relative;
   padding-top: 100px;
   padding-bottom: 150px;
-  
+
   .background {
     position: fixed;
     top: 64px;
@@ -43,17 +43,17 @@ header {
     background-size: cover;
     background-position: center 42%;
     background-repeat: no-repeat;
-    
+
     &::after {
       content: "Picture taken by me";
-      color: rgba(255, 255, 255, 0.4);
+      color: rgba(255, 255, 255, 0.25);
       font-size: 10px;
       position: absolute;
       right: 5px;
       bottom: 0;
     }
   }
-  
+
   hr {
     max-width: 720px;
   }
@@ -65,7 +65,7 @@ header {
 
 section {
   background-color: #FFF;
-  
+
   h2 {
     // Anchor workaround to account for fixed navbar
     margin-top: -90px; // -(64 (navbar height) + 27 (section top padding) - 1 (any rounding error))
@@ -101,20 +101,20 @@ section {
 #projects {
   /* background-color: #F63D3D; */
   background-color: #F6623D;
-  
+
   a {
     color: inherit;
     text-decoration: inherit;
   }
-  
+
   h2 {
     color: #FFF;
   }
-  
+
   p {
     padding: 0 4px;
   }
-  
+
   // Make it "pop"!
   .panel:hover {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
