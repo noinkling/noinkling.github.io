@@ -1,0 +1,181 @@
+nav.navbar.navbar-inverse.navbar-fixed-top
+  .container
+    .navbar-header
+      button.navbar-toggle.collapsed type="button" data={toggle:"collapse", target:".navbar-collapse"}
+        span.icon-bar
+        span.icon-bar
+        span.icon-bar
+      a.navbar-brand href="#" Malcolm McKeown
+    .collapse.navbar-collapse
+      ul.nav.navbar-nav.navbar-right
+        li
+          /a href="#about-anchor" About
+          a.hidden-xs href="#about-anchor" About
+          a.visible-xs href="#about-anchor" data={toggle:"collapse", target:".navbar-collapse"} About
+        li
+          a.hidden-xs href="#skills-anchor" Skills
+          a.visible-xs href="#skills-anchor" data={toggle:"collapse", target:".navbar-collapse"} Skills
+        li
+          a.hidden-xs href="#projects-anchor" Projects
+          a.visible-xs href="#projects-anchor" data={toggle:"collapse", target:".navbar-collapse"} Projects
+        li
+          a.hidden-xs href="#contact-anchor" Contact
+          a.visible-xs href="#contact-anchor" data={toggle:"collapse", target:".navbar-collapse"} Contact
+      
+header
+  .background
+  .container
+    .row: .col-md-12
+      h1 Malcolm McKeown
+      h3 Web Developer
+      hr
+      a.btn.btn-default.btn-lg> href="https://nz.linkedin.com/in/malcolmmckeown" target="_blank"
+        i.fa.fa-linkedin>
+        | LinkedIn
+      a.btn.btn-default.btn-lg> href="https://github.com/noinkling" target="_blank"
+        i.fa.fa-github>
+        | GitHub
+      a.btn.btn-default.btn-lg> href="http://www.freecodecamp.com/noinkling" target="_blank"
+        // Yeah I know it's not technically the FCC icon...
+        i.glyphicon.glyphicon-fire>
+        | Free Code Camp
+
+      
+section#about
+  .container
+    h2#about-anchor About Me
+    .row: .col-md-10.col-md-offset-1.text-left
+      p I am a self taught web developer currently living in Auckland, New Zealand.
+      p
+        | My primary proficiency is in Ruby on Rails, which I began learning in 2013. I am competent in HTML, CSS, and frontend JavaScript (more details further down). In an effort to improve my skills, specifically in both frontend and backend JavaScript, I am currently working through
+        a<> href="http://www.freecodecamp.com/" target="_blank" Free Code Camp's
+        | curriculum.
+      p I have a science degree in nutrition, and one of my main interests lies in health education, information and data. Consequently one of my goals is to utilize the web and associated technologies to deliver effective tools and materials relating to the health field.
+      p
+        | However, I enjoy solving problems and building web apps in general, and am currently available for hire or freelance work of any description.
+        a< href="#contact-anchor" Get in touch!
+      
+section#skills
+  .container
+    h2#skills-anchor Skills
+    p I am competent in...
+    .row
+      #skills-list-wrapper
+        .col-lg-3.col-lg-offset-3.col-md-4.col-md-offset-2.col-sm-5.col-sm-offset-1
+              h4 Frontend
+              ul
+                li HTML5, CSS3, JavaScript
+                li 
+                  | Libraries & frameworks:
+                  ul
+                    li jQuery
+                    li React
+                    li Bootstrap
+                li
+                  | Preprocessor languages:
+                  ul
+                    li Sass (SCSS)
+                    li CoffeeScript
+                li
+                  | HTML templates:
+                  ul
+                    li Jade
+                    li Slim
+                    li Mustache
+              h4 Backend
+              ul
+                li Ruby on Rails / Ruby
+                li 
+                  | Relational databases
+                  ul: li PostgreSQL
+        .col-lg-3.col-md-4.col-sm-5
+              h4 Tools
+              ul
+                li Git / GitHub
+                li Linux command line
+                li NPM
+                li RubyGems
+                li Sublime Text
+              h4 Methods
+              ul
+                li Responsive design
+                li Test-driven development (TDD)
+                li Agile development
+
+section#projects
+  .container
+    h2#projects-anchor My Projects
+    .row
+      .col-sm-3: a href="http://codepen.io/NoInkling/full/aveMEY/" target="_blank": .thumbnail.panel
+        img
+        h5 Simon Game
+        p Web Audio API / jQuery / Promises / Sass
+        
+      .col-sm-3: a href="http://codepen.io/NoInkling/full/BoGorg/" target="_blank": .thumbnail.panel
+        img
+        h5 Wikipedia Search
+        p jQuery / Ajax / Sass / Mustache.js
+        
+      .col-sm-3: a href="http://codepen.io/NoInkling/full/MaoOXr/" target="_blank": .thumbnail.panel
+        img
+        h5 Calculator
+        p jQuery / Sass
+        
+      .col-sm-3: a href="http://codepen.io/NoInkling/full/wMoyNR/" target="_blank": .thumbnail.panel
+        img
+        h5 Twitch Stream Status
+        p React / ES2015+ / Fetch API / Bootstrap
+      
+      .col-sm-3: a href="http://codepen.io/NoInkling/full/qOGqYK/" target="_blank": .thumbnail.panel
+        img
+        h5 Tic-tac-toe
+        p jQuery / Minimax AI
+      
+      .col-sm-3: a href="http://codepen.io/NoInkling/full/rOLZdd/" target="_blank": .thumbnail.panel
+        img
+        h5 Pomodoro Timer
+        p jQuery / ProgressBar.js / Font Awesome
+      
+      .col-sm-3: a href="http://codepen.io/NoInkling/full/yYVdyx/" target="_blank": .thumbnail.panel
+        img
+        h5 Camper News
+        p React / jQuery / Ajax / Moment.js / Bootstrap
+      
+      .col-sm-3: a href="http://codepen.io/NoInkling/full/OVBNxR/" target="_blank": .thumbnail.panel
+        img.img-thumbnail src="https://cdn.rawgit.com/noinkling/zipline_assets/ae8a698b5159d76187e911d5b26481dea91e347c/portfolio/quote_machine.png"
+        h5 Random Quote Machine
+        p jQuery / Bootstrap
+        
+      .col-sm-3: a href="http://codepen.io/NoInkling/full/dorqwO/" target="_blank": .thumbnail.panel
+        img
+        h5 Local Weather
+        p jQuery / Ajax / Bootstrap
+      
+      .col-sm-3: .thumbnail.panel
+        img
+        h5 More projects
+        p Coming soon...
+      
+section#contact
+  .container
+    h2#contact-anchor Contact Me
+    .row: .col-md-12
+      p Email:
+      // Trying to avoid spam, no mailto: link
+      p#email-address mckeowndev &nbsp; AT &nbsp; gmail.com
+      p Or find me online:
+      a.btn.btn-default.btn-lg> href="https://nz.linkedin.com/in/malcolmmckeown" target="_blank"
+        i.fa.fa-linkedin>
+        | LinkedIn
+      a.btn.btn-default.btn-lg> href="https://github.com/noinkling" target="_blank"
+        i.fa.fa-github>
+        | GitHub
+      a.btn.btn-default.btn-lg> href="http://www.freecodecamp.com/noinkling" target="_blank"
+        // Yeah I know it's not technically the FCC icon...
+        i.glyphicon.glyphicon-fire>
+        | Free Code Camp
+      
+footer
+  .container
+    .row: .col-md-12
+      | © 2016 Malcolm McKeown

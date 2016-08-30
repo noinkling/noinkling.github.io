@@ -1,0 +1,138 @@
+// Change unwanted theme styles
+.btn {
+  text-transform: inherit;
+  border-radius: 2px;
+}
+
+body {
+  padding-top: 64px;
+  font-size: 16px;
+  position: relative; // For scrollspy
+}
+
+.navbar-inverse {
+  background-color: #323747;
+  .navbar-toggle .icon-bar {
+    background-color: #FFF;
+  }
+}
+
+section, header {
+  text-align: center;
+  padding-top: 27px;
+  padding-bottom: 50px;
+  h2 {
+    margin-bottom: 30px;
+  }
+}
+
+header {
+  /* background-color: #18BC9C; */
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 150px;
+  
+  .background {
+    position: fixed;
+    top: 64px;
+    left: 0;
+    width: 100%;
+    height: 484px;
+    z-index: -1;
+    background-image: url(https://cdn.rawgit.com/noinkling/zipline_assets/ae8a698b5159d76187e911d5b26481dea91e347c/portfolio/background.jpg);
+    background-size: cover;
+    background-position: center 42%;
+    background-repeat: no-repeat;
+    
+    &::after {
+      content: "Picture taken by me";
+      color: rgba(255, 255, 255, 0.4);
+      font-size: 10px;
+      position: absolute;
+      right: 5px;
+      bottom: 0;
+    }
+  }
+  
+  hr {
+    max-width: 720px;
+  }
+  h1, h3 {
+    color: #FFF;
+    text-shadow: 0 0 20px #000;
+  }
+}
+
+section {
+  background-color: #FFF;
+  
+  h2 {
+    // Anchor workaround to account for fixed navbar
+    margin-top: -90px; // -(64 (navbar height) + 27 (section top padding) - 1 (any rounding error))
+    padding-top: 114px; // 90 + 23 (to account for original h2 top-margin) + 1
+  }
+}
+
+#about {
+  /* background-color: #18BC9C; */
+}
+
+#skills {
+  /* background-color: #139179; */
+  background-color: #18BC9C;
+  color: #FFF;
+  h2, h4 {
+    color: #FFF;
+  }
+  h4 {
+    margin-top: 25px;
+  }
+  // Little workaround to get the lists centered nicely at xs sizes
+  #skills-list-wrapper {
+    display: inline-block;
+    width: auto;
+    text-align: left;
+    @media (min-width: 768px) {
+      width: 100%;
+    }
+  }
+}
+
+#projects {
+  /* background-color: #F63D3D; */
+  background-color: #F6623D;
+  
+  a {
+    color: inherit;
+    text-decoration: inherit;
+  }
+  
+  h2 {
+    color: #FFF;
+  }
+  
+  p {
+    padding: 0 4px;
+  }
+  
+  // Make it "pop"!
+  .panel:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  }
+}
+
+#contact {
+  #email-address {
+    font-size: 22px;
+  }
+}
+
+.glyphicon-fire {
+  text-decoration: underline;
+}
+
+footer {
+  background-color: #222;
+  height: 100px;
+  padding-top: 30px;
+}

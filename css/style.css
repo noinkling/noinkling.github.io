@@ -1,0 +1,126 @@
+.btn {
+  text-transform: inherit;
+  border-radius: 2px;
+}
+
+body {
+  padding-top: 64px;
+  font-size: 16px;
+  position: relative;
+}
+
+.navbar-inverse {
+  background-color: #323747;
+}
+.navbar-inverse .navbar-toggle .icon-bar {
+  background-color: #FFF;
+}
+
+section, header {
+  text-align: center;
+  padding-top: 27px;
+  padding-bottom: 50px;
+}
+section h2, header h2 {
+  margin-bottom: 30px;
+}
+
+header {
+  /* background-color: #18BC9C; */
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 150px;
+}
+header .background {
+  position: fixed;
+  top: 64px;
+  left: 0;
+  width: 100%;
+  height: 484px;
+  z-index: -1;
+  background-image: url(https://cdn.rawgit.com/noinkling/zipline_assets/ae8a698b5159d76187e911d5b26481dea91e347c/portfolio/background.jpg);
+  background-size: cover;
+  background-position: center 42%;
+  background-repeat: no-repeat;
+}
+header .background::after {
+  content: "Picture taken by me";
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 10px;
+  position: absolute;
+  right: 5px;
+  bottom: 0;
+}
+header hr {
+  max-width: 720px;
+}
+header h1, header h3 {
+  color: #FFF;
+  text-shadow: 0 0 20px #000;
+}
+
+section {
+  background-color: #FFF;
+}
+section h2 {
+  margin-top: -90px;
+  padding-top: 114px;
+}
+
+#about {
+  /* background-color: #18BC9C; */
+}
+
+#skills {
+  /* background-color: #139179; */
+  background-color: #18BC9C;
+  color: #FFF;
+}
+#skills h2, #skills h4 {
+  color: #FFF;
+}
+#skills h4 {
+  margin-top: 25px;
+}
+#skills #skills-list-wrapper {
+  display: inline-block;
+  width: auto;
+  text-align: left;
+}
+@media (min-width: 768px) {
+  #skills #skills-list-wrapper {
+    width: 100%;
+  }
+}
+
+#projects {
+  /* background-color: #F63D3D; */
+  background-color: #F6623D;
+}
+#projects a {
+  color: inherit;
+  text-decoration: inherit;
+}
+#projects h2 {
+  color: #FFF;
+}
+#projects p {
+  padding: 0 4px;
+}
+#projects .panel:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+#contact #email-address {
+  font-size: 22px;
+}
+
+.glyphicon-fire {
+  text-decoration: underline;
+}
+
+footer {
+  background-color: #222;
+  height: 100px;
+  padding-top: 30px;
+}
